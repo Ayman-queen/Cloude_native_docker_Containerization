@@ -12,9 +12,6 @@ The purpose of this assignment is to demonstrate **containerization, image creat
 >  images are tagged with `latest`.
 
 ---
-
-## 📁 Project Overview
-
 ## 📁 Projects Included
 
 ### 1️⃣ Next.js Docker (`nextjs-docker`)
