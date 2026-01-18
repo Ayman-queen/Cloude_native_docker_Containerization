@@ -1,4 +1,4 @@
-# 🚀 Docker Containerization – Cloud Native (Day 1)
+# 🚀 Docker Containerization – Cloud Native
 
 This repository contains **Dockerized versions** of two projects: **Next.js** and **FastAPI**.  
 The purpose of this assignment is to demonstrate **containerization, image creation, and deployment to Docker Hub**.
@@ -15,28 +15,33 @@ The purpose of this assignment is to demonstrate **containerization, image creat
 
 ## 📁 Project Overview
 
+## 📁 Projects Included
+
 ### 1️⃣ Next.js Docker (`nextjs-docker`)
 
-* **Framework:** Next.js  
-* **Base Image:** Node.js 22 Alpine  
-* **Port:** 3000  
-* **Description:** A containerized frontend application built with Next.js for fast and lightweight deployment.
+* **Built Using:** Next.js  
+* **Dockerized Using:** Node.js 22 Alpine  
+* **Runs On Port:** 3000  
+* **Description:** This containerized application serves a Next.js frontend, optimized for fast startup and lightweight deployment.
 
-**Commands:**
+**Commands Used:**
 
 ```bash
+# Build Docker image
+docker build -t nextjs-docker .
 
-### 2 Built using FastAPI
-* **Dependency management with uv
-Dockerized using Python 3.12 Slim
-Runs on port 8000
-Commands used:**
+# Run container
+docker run -p 3000:3000 nextjs-docker
+### 2️⃣ FastAPI Docker (`fastapi-docker`)
 
+* **Built Using:** FastAPI  
+* **Dependency Management:** uvicorn  
+* **Dockerized Using:** Python 3.12 Slim  
+* **Runs On Port:** 8000  
+* **Description:** This containerized API provides backend services using FastAPI. It is optimized for rapid development, scalability, and efficient runtime performance.
+
+**Commands Used:**
+
+```bash
 docker build -t fastapi-docker .
 docker run -p 8000:8000 fastapi-docker
-Docker
-Docker Desktop Images (Next.js & FastAPI)
-Docker Desktop Containers (Both Running)
-
-
-
